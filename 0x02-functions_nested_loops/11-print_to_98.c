@@ -1,12 +1,46 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * add - Add two integers
- * @x: int type number
- * @y: int type number
- * Return: result of addition
+ * print_to_98 - Print all natural numbers from n to 98
+ * @n: int type number
  */
-int add(int x, int y)
+void print_to_98(int n)
 {
-	return (x + y);
+	if (n > 98)
+	{
+		while (n >= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n--;
+		}
+	}
+	else
+	{
+		while (n <= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n++;
+		}
+	}
+	printf("\n");
 }
+
+
+
+
+
+
+
+
+
+
+
