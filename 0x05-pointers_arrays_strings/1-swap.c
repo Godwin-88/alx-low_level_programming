@@ -1,10 +1,24 @@
+#include <stdio.h>
 #include "main.h"
 /**
-* reset_to_98 -a function that takes a pointer to an int
-* @n: puntero
-* return (0)
+* swap_int - swaps the values of two integers.
+* @a: value to be evaluate.
+* @b: value to be evaluate.
+* Return: not.
 */
-void reset_to_98(int *n)
+void swap_int(int *a, int *b)
 {
-	*n = 98;
+
+	int n = *a;
+	*a = *b;
+	*b = n;
 }
+
+
+
+
+
+
+
+
+
